@@ -7,18 +7,18 @@
   <meta name="description" content="Sources for the ORGT promotional site on student health, SDG 3, and Georgia Tech sustainability.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620&family=Outfit:wght@400;560;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Silkscreen&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="treeline">
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html">
-        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#b3a369"/><path d="M24 8l4 12 12 4-12 4-4 12-4-12-12-4 12-4z" fill="#003057"/></svg>
+        <svg class="brand-mark" viewBox="0 0 9 9" aria-hidden="true"><path fill="currentColor" d="M4 0h1v1H4zM3 1h3v1H3zM2 2h5v1H2zM3 3h3v1H3zM1 4h7v1H1zM2 5h5v1H2zM0 6h9v1H0zM4 7h1v2H4z"/></svg>
         <div><strong>ORGT Adventure Trips</strong><span>Good health and well-being</span></div>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="burger" aria-hidden="true"></span><span class="sr">Menu</span></button>
       <nav class="nav" id="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="issue.html">The issue</a>
@@ -38,20 +38,20 @@
       </header>
       <section class="section">
         <ol class="sources">
-          <li>United Nations. “Goal 3: Ensure healthy lives and promote well-being for all at all ages.” <a href="https://sdgs.un.org/goals/goal3">sdgs.un.org/goals/goal3</a>.</li>
-          <li>American College Health Association. <em>American College Health Association–National College Health Assessment III: Georgia Institute of Technology Executive Summary Fall 2022</em>. Silver Spring, MD: American College Health Association, 2022. <a href="https://wellnesscenter.gatech.edu/sites/default/files/2024-01/NCHAIII-FALL2022-GeorgiaTech-Report.pdf">Wellness Center PDF</a>. Figures used here: 56.6% positive loneliness screen, 37.7% active-adult physical activity guideline, 28.4% highly active guideline, 28.8% any food insecurity, n = 318, response rate 4.0%.</li>
-          <li>Georgia Institute of Technology. <em>Reducing Health Disparities</em>. Goal 2, Strategy 2E, Cultivate Well-Being Action and Transformation Roadmap, April 2024. <a href="https://bpb-us-e1.wpmucdn.com/sites.gatech.edu/dist/1/4014/files/2024/07/2E-Identifying-Health-Disparities.pdf">PDF</a>. Used for the two-thirds / one-third mental health support finding and the diagnosis gap by gender.</li>
-          <li>White, M. P., et al. “Spending at Least 120 Minutes a Week in Nature Is Associated with Good Health and Wellbeing.” <em>Scientific Reports</em> 9, 7730 (2019). <a href="https://www.nature.com/articles/s41598-019-44097-3">nature.com/articles/s41598-019-44097-3</a>.</li>
-          <li>Georgia Tech Office of Sustainability. “Sustainability Next.” <a href="https://sustain.gatech.edu/sustainability-next-plan/">sustain.gatech.edu/sustainability-next-plan</a>. Includes President Cabrera’s statement on advancing the full range of the UN goals.</li>
-          <li>Georgia Tech News Center. “The Sustainability Next Task Force Delivers Vision and Launches Implementation.” October 24, 2022. <a href="https://news.gatech.edu/news/2022/10/24/sustainability-next-task-force-delivers-vision-and-launches-implementation">news.gatech.edu</a>. Lists the six plan priorities.</li>
-          <li>Georgia Tech Strategic Plan. “Cultivate Well-Being.” <a href="https://strategicplan.gatech.edu/focus/wellbeing">strategicplan.gatech.edu/focus/wellbeing</a>.</li>
-          <li>Georgia Tech Office of Sustainability. “Student Sustainable Living Guide.” <a href="https://sustain.gatech.edu/student-sustainable-living-guide/">sustain.gatech.edu/student-sustainable-living-guide</a>. Names ORGT under physical well-being and two hours outdoors under mental well-being.</li>
-          <li>Georgia Tech Campus Recreation. “Adventure Trips.” <a href="https://crc.gatech.edu/adventure-trips/">crc.gatech.edu/adventure-trips</a>. Program description, eligibility, fee waiver, registration, group size, and outpost hours.</li>
-          <li>Georgia Tech Campus Recreation. Sport and rental pages used for trip specifics: <a href="https://crc.gatech.edu/backpacking/">backpacking</a>, <a href="https://crc.gatech.edu/caving/">caving</a>, <a href="https://crc.gatech.edu/bikepacking/">biking</a>, <a href="https://crc.gatech.edu/whitewater-kayaking/">whitewater kayaking</a>, <a href="https://crc.gatech.edu/wilderness-outpost/">Wilderness Outpost</a>, <a href="https://crc.gatech.edu/core/">CORE</a>, and <a href="https://crc.gatech.edu/programs/">programs overview</a>.</li>
-          <li>Georgia Tech Campus Recreation. “Sustainability in the CRC.” <a href="https://w4.crc.gatech.edu/about/sustainability-crc">Sustainability page</a>. Connects outdoor programming with stress, mood, and contact with nature.</li>
-          <li>Georgia Tech Engage. “Outdoor Recreation.” <a href="https://gatech.campuslabs.com/engage/organization/outdoor-recreation">Organization profile</a>. Identity statement, sport list, and scale of the volunteer program.</li>
-          <li>GTORGT. “Experience ORGT.” YouTube. <a href="https://www.youtube.com/watch?v=GJakSgcYjfM">youtube.com/watch?v=GJakSgcYjfM</a>.</li>
-          <li>Georgia Tech Center for Mental Health Care and Resources. <a href="https://counseling.gatech.edu/">counseling.gatech.edu</a>.</li>
+          <li id="src-1">United Nations. “Goal 3: Ensure healthy lives and promote well-being for all at all ages.” <a href="https://sdgs.un.org/goals/goal3">sdgs.un.org/goals/goal3</a>.</li>
+          <li id="src-2">American College Health Association. <em>American College Health Association–National College Health Assessment III: Georgia Institute of Technology Executive Summary Fall 2022</em>. Silver Spring, MD: American College Health Association, 2022. <a href="https://wellnesscenter.gatech.edu/sites/default/files/2024-01/NCHAIII-FALL2022-GeorgiaTech-Report.pdf">Wellness Center PDF</a>. Figures used here: 56.6% positive loneliness screen, 37.7% active-adult physical activity guideline, 28.4% highly active guideline, 28.8% any food insecurity, n = 318, response rate 4.0%.</li>
+          <li id="src-3">Georgia Institute of Technology. <em>Reducing Health Disparities</em>. Goal 2, Strategy 2E, Cultivate Well-Being Action and Transformation Roadmap, April 2024. <a href="https://bpb-us-e1.wpmucdn.com/sites.gatech.edu/dist/1/4014/files/2024/07/2E-Identifying-Health-Disparities.pdf">PDF</a>. Used for the two-thirds / one-third mental health support finding and the diagnosis gap by gender.</li>
+          <li id="src-4">White, M. P., et al. “Spending at Least 120 Minutes a Week in Nature Is Associated with Good Health and Wellbeing.” <em>Scientific Reports</em> 9, 7730 (2019). <a href="https://www.nature.com/articles/s41598-019-44097-3">nature.com/articles/s41598-019-44097-3</a>.</li>
+          <li id="src-5">Georgia Tech Office of Sustainability. “Sustainability Next.” <a href="https://sustain.gatech.edu/sustainability-next-plan/">sustain.gatech.edu/sustainability-next-plan</a>. Includes President Cabrera’s statement on advancing the full range of the UN goals.</li>
+          <li id="src-6">Georgia Tech News Center. “The Sustainability Next Task Force Delivers Vision and Launches Implementation.” October 24, 2022. <a href="https://news.gatech.edu/news/2022/10/24/sustainability-next-task-force-delivers-vision-and-launches-implementation">news.gatech.edu</a>. Lists the six plan priorities.</li>
+          <li id="src-7">Georgia Tech Strategic Plan. “Cultivate Well-Being.” <a href="https://strategicplan.gatech.edu/focus/wellbeing">strategicplan.gatech.edu/focus/wellbeing</a>.</li>
+          <li id="src-8">Georgia Tech Office of Sustainability. “Student Sustainable Living Guide.” <a href="https://sustain.gatech.edu/student-sustainable-living-guide/">sustain.gatech.edu/student-sustainable-living-guide</a>. Names ORGT under physical well-being and two hours outdoors under mental well-being.</li>
+          <li id="src-9">Georgia Tech Campus Recreation. “Adventure Trips.” <a href="https://crc.gatech.edu/adventure-trips/">crc.gatech.edu/adventure-trips</a>. Program description, eligibility, fee waiver, registration, group size, and outpost hours.</li>
+          <li id="src-10">Georgia Tech Campus Recreation. Sport and rental pages used for trip specifics: <a href="https://crc.gatech.edu/backpacking/">backpacking</a>, <a href="https://crc.gatech.edu/caving/">caving</a>, <a href="https://crc.gatech.edu/bikepacking/">biking</a>, <a href="https://crc.gatech.edu/whitewater-kayaking/">whitewater kayaking</a>, <a href="https://crc.gatech.edu/wilderness-outpost/">Wilderness Outpost</a>, <a href="https://crc.gatech.edu/core/">CORE</a>, and <a href="https://crc.gatech.edu/programs/">programs overview</a>.</li>
+          <li id="src-11">Georgia Tech Campus Recreation. “Sustainability in the CRC.” <a href="https://w4.crc.gatech.edu/about/sustainability-crc">Sustainability page</a>. Connects outdoor programming with stress, mood, and contact with nature.</li>
+          <li id="src-12">Georgia Tech Engage. “Outdoor Recreation.” <a href="https://gatech.campuslabs.com/engage/organization/outdoor-recreation">Organization profile</a>. Identity statement, sport list, and scale of the volunteer program.</li>
+          <li id="src-13">GTORGT. “Experience ORGT.” YouTube. <a href="https://www.youtube.com/watch?v=GJakSgcYjfM">youtube.com/watch?v=GJakSgcYjfM</a>.</li>
+          <li id="src-14">Georgia Tech Center for Mental Health Care and Resources. <a href="https://counseling.gatech.edu/">counseling.gatech.edu</a>.</li>
         </ol>
       </section>
     </div>
