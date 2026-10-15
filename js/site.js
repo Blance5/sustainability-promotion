@@ -6,6 +6,12 @@
       const open = nav.classList.toggle("open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
+    nav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      });
+    });
   }
 
   const chart = document.querySelector("[data-chart]");
@@ -98,31 +104,31 @@
   const results = {
     calm: {
       title: "Start with Mindfulness Outdoors or a short hike",
-      text: "You do not need a rapid or a rope. Mindfulness Outdoors pairs an easy time outside with things like a walk, meditation, or painting, and it is built for students without adventure experience. A backpacking day hike is the next step if you want a little more trail. Both are a practical way to bank time outside during a heavy week."
+      text: "Mindfulness Outdoors is a walk, meditation, or making something, built for students without adventure experience. A backpacking day hike is the next step if you want more trail."
     },
     hike: {
       title: "Start with a beginner backpacking day hike",
-      text: "Day hikes are one of the lowest-friction trips we run. Instruction, transportation, and any specialty gear are included, and most students do not need prior backpacking experience. If the day goes well, an overnight is the same sport with a tent and a longer reset."
+      text: "Instruction, transportation, and specialty gear are included. Most students need no prior experience. An overnight is the same sport with a tent if the day goes well."
     },
     cave: {
       title: "Start with a horizontal caving trip",
-      text: "Horizontal caving is scrambling, crawling, and walking through passages in the Tennessee–Alabama–Georgia cave country. It is memorable without the rope work of a vertical trip. We provide helmets, lights, and the rest of the specialty kit. Vertical caving comes after you have done a horizontal trip."
+      text: "Horizontal caving is scrambling and crawling in Tennessee–Alabama–Georgia cave country. We provide helmets and lights. Vertical trips, which add ropes, come after a horizontal trip."
     },
     bike: {
       title: "Start with a beginner mountain biking day trip",
-      text: "Day rides are generally beginner friendly, with climbs and about ten miles as a typical range. Bikes and the rest of the trip support come with registration. If you already ride, ask the trip leader whether a given date is a better match for your fitness."
+      text: "Day rides are generally beginner friendly, often around ten miles with some climbs. Bikes come with the trip."
     },
     boat: {
       title: "Start on flat water, then decide about whitewater",
-      text: "If you can pass the pool swim test — 25 to 50 yards and one minute of treading water, without a life jacket — paddling is open to you. Stand-up paddleboarding and sea kayaking are the calmer first boats. Whitewater kayaking begins in the pool and on class II water, with a required pre-trip class. Intermediate rivers require a beginner trip first."
+      text: "Pass the pool swim test first: 25 to 50 yards and one minute treading water, no life jacket. Start with paddleboarding or sea kayaking. Whitewater begins in the pool and on class II water."
     },
     climb: {
       title: "Start with a beginner top-rope climbing trip",
-      text: "Outdoor climbing trips are small, often about five participants, so you get time on the rock and direct coaching. No gym background is required for beginner top-rope. Lead climbing is an intermediate step after that. You can also use the CRC climbing wall during the week to get comfortable with height before you leave campus."
+      text: "Beginner top-rope trips are small, often about five people, and no gym background is required. The CRC climbing wall is there if you want to practice height during the week."
     },
     overnight: {
       title: "Look at a beginner overnight",
-      text: "Overnights cost more than day trips because they cover campsites, more staff time, and a longer window outside — which is exactly the point if your week never leaves you two quiet hours. Backpacking overnights are the usual first overnight. Food is still yours to bring. Registration opens about a month before departure and trips fill quickly."
+      text: "A beginner backpacking overnight is the usual first night out. You still bring food. Registration opens about a month ahead and fills quickly."
     }
   };
 
